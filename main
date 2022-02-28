@@ -1,0 +1,757 @@
+
+<!doctype html>
+<html data-n-head-ssr lang="en" amp data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D,%22amp%22:%7B%22ssr%22:true%7D%7D">
+  <head >
+    <title>Check Care</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" name="apple-mobile-web-app-capable" content="yes">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Venn Studio is an architecture &amp; interior design studio specializing in custom home design, residential remodel &amp; additions, accessory dwelling units (ADU) and tenant improvements.">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="preload" href="/_nuxt/ede41ea378fbbee5b8d9.js" as="script">
+    <link rel="preload" href="/_nuxt/dfd42baf84f49f9b7176.js" as="script">
+    <link rel="preload" href="/_nuxt/23e4f8641828017baeff.js" as="script">
+    <style data-vue-ssr-id="782b1799:0 b48b4794:0 64cc8324:0 173a5f0a:0 6d70d422:0 75c5fb4b:0 56d1d3b4:0 b3ec6e60:0 4aebac14:0 ebcb87c8:0 7014f910:0 98ad7d76:0 4b3c090d:0 c67a2fc6:0 68a25eec:0">
+      .nuxt-progress{position:fixed;top:0;left:0;right:0;height:2px;width:0;opacity:1;-webkit-transition:width .1s,opacity .4s;transition:width .1s,opacity .4s;background-color:#fff;z-index:999999}.nuxt-progress.nuxt-progress-notransition{-webkit-transition:none;transition:none}.nuxt-progress-failed{background-color:red}
+*,:after,:before{box-sizing:border-box}body{margin:0;overflow-x:hidden!important;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}blockquote,h1,h2,h3,h4,h5,h6,p{font-size:inherit;font-weight:400;margin:0}li,ol,ul{list-style:none;margin:0;padding:0}a{color:currentColor;text-decoration:none}img{width:100%}figure{margin:0}fieldset{display:block;margin:0;padding:0;border:0}input{font-family:inherit;font-size:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none}input:focus{outline:none}button{padding:0;color:inherit;background:none;border:none;font-size:inherit;font-family:inherit;line-height:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus{outline:1px dotted}
+
+@font-face{font-family:BrutGrotesque-014;src:url(./_nuxt/fonts/BrutGrotesque-014.ttf);src:url(./_nuxt/fonts/BrutGrotesque-014.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:NimbusSanExt;src:url(./_nuxt/fonts/NimbusSanExt.woff2.ttf);src:url(./_nuxt/fonts/NimbusSanExt.woff2.ttf) format("truetype");font-weight:400;font-style:normal}
+
+.fade-enter-active,.fade-leave-active{-webkit-transition:opacity .3s ease;transition:opacity .3s ease}
+.fade-enter,.fade-leave-active{opacity:0}
+
+.slide-down-enter-active,.slide-down-leave-active{-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}.slide-down-enter,.slide-down-leave-active{-webkit-transform:translateY(100%);transform:translateY(100%)}.page-enter-active,.page-leave-active{-webkit-transition:opacity .3s;transition:opacity .3s}.page-enter,.page-leave-active{opacity:0}
+
+@-webkit-keyframes fadeUp{0%{opacity:0;-webkit-transform:translateY(15px);transform:translateY(15px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@keyframes fadeUp{0%{opacity:0;-webkit-transform:translateY(15px);transform:translateY(15px)}to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+
+:root{--color-text:#fffffe;--color-background-rgb:0,0,0;--color-background:rgb(var(--color-background-rgb));--color-light:var(--color-background);--color-muted:#a9a8a6;--color-error:#ee2c33;--color-white:#fffffe;--transition-color-timing:0.2s ease;--transition-opacity:opacity var(--transition-color-timing);--transition-color:color var(--transition-color-timing);--transition-border-color:border-color var(--transition-color-timing);--transition-background-color:background-color var(--transition-color-timing);--gutter:10px;--grid-gap:calc(var(--gutter)*2);--block-margin-l:180px;--block-margin:80px;--header-height:50px;--footer-height:50px;--footer-height-mob:140px;--page-bottom-padding:240px;--mobile-content-inset:calc(var(--grid-gap) + 8.33333%);--card-scale-time:0.4s}html{background-color:#f7f8f5;background-color:var(--color-background)}::-moz-selection{color:#f7f8f5;color:var(--color-background);background:#3f3831;background:var(--color-text)}::selection{color:#f7f8f5;color:var(--color-background);background:#3f3831;background:var(--color-text)}.MasterLayout{font-size:.875rem;line-height:1.2;position:relative;width:100vw;font-family: 'BrutGrotesque-014';color:#3f3831;color:var(--color-text);background-color:#f7f8f5;background-color:var(--color-background)}
+
+
+.TheHeader{-webkit-transition:var(--transition-color);transition:var(--transition-color)}
+@media (min-width:690px){
+  .TheHeader_inverted{color:var(--color-light)}
+  .TheHeader_inverted .LogoSvg-Group{fill:currentColor}
+}
+.TheHeader-HomeNav,.TheHeader-MobileNav,.TheHeader-SiteNav{opacity:0}
+.TheHeader_ready .TheHeader-HomeNav,.TheHeader_ready .TheHeader-MobileNav,.TheHeader_ready .TheHeader-SiteNav{-webkit-animation:fadeUp .4s ease 0s 1 normal forwards;animation:fadeUp .4s ease 0s 1 normal forwards}
+.TheHeader-HomeNav,.TheHeader-SiteNav{position:fixed;top:0;left:0;display:-webkit-box;display:flex;height:var(--header-height);-webkit-box-align:center;align-items:center;padding:0 var(--gutter)}
+.TheHeader-HomeNav{z-index:500}
+.TheHeader-SiteNav{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end;width:100vw;z-index:350}
+.TheHeader-Link{margin:0 var(--gutter)}
+.TheHeader-Link:hover .TheHeader-LinkText{text-decoration:underline;-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor}
+.TheHeader-Link:hover .TheHeader-LinkText,.TheHeader-LinkText{-webkit-transition:-webkit-text-decoration-color .3s ease;transition:-webkit-text-decoration-color .3s ease;transition:text-decoration-color .3s ease;transition:text-decoration-color .3s ease,-webkit-text-decoration-color .3s ease}
+.TheHeader-LinkText{text-decoration:underline;-webkit-text-decoration-color:transparent;text-decoration-color:transparent}
+
+
+.TheHeader-Background{position:fixed;top:0;left:0;z-index:50;width:100vw;height:calc(var(--header-height)*2);background:#fff;background:-webkit-gradient(linear,left top,left bottom,from(rgba(var(--color-background-rgb),1)),color-stop(30%,rgba(var(--color-background-rgb),.9)),color-stop(50%,rgba(var(--color-background-rgb),.6)),color-stop(70%,rgba(var(--color-background-rgb),.3)),to(rgba(var(--color-background-rgb),0)));background:linear-gradient(180deg,rgba(var(--color-background-rgb),1),rgba(var(--color-background-rgb),.9) 30%,rgba(var(--color-background-rgb),.6) 50%,rgba(var(--color-background-rgb),.3) 70%,rgba(var(--color-background-rgb),0));opacity:0;-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transition:all .3s ease-out;transition:all .3s ease-out;pointer-events:none}
+
+
+.TheHeader-Background_visible{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
+.TheHeader-MobileNav{position:fixed;top:4px;right:15px;z-index:450}
+.TheHeader-MobileMenuButton{padding:5px}
+.TheHeader-MobileMenuButton:focus{border:none;outline:none}
+@media (min-width:768px){.TheHeader-MobileNav{display:none}}
+@media (max-width:768px){.TheHeader-SiteNav{display:none}}
+.LogoSvg[data-v-2a2a23c1]{height:13px}
+.LogoSvg_display[data-v-2a2a23c1]{height:46px}
+.LogoSvg-Group[data-v-2a2a23c1]{fill:currentColor;-webkit-transition:fill var(--transition-color-timing);transition:fill var(--transition-color-timing)}
+.LogoSvg_invert .LogoSvg-Group[data-v-2a2a23c1]{fill:var(--color-light)}
+.HamburgerSvg[data-v-a04707fe]{width:25px;height:25px;overflow:visible}
+.HamburgerSvg-BottomRect[data-v-a04707fe],.HamburgerSvg-TopRect[data-v-a04707fe]{-webkit-transition:all .2s ease;transition:all .2s ease;-webkit-transform-origin:center;transform-origin:center}
+.HamburgerSvg_active .HamburgerSvg-TopRect[data-v-a04707fe]{-webkit-transform:translate(-5px,4.75px) rotate(45deg);transform:translate(-5px,4.75px) rotate(45deg)}
+.HamburgerSvg_active .HamburgerSvg-BottomRect[data-v-a04707fe]{-webkit-transform:translate(-5px,-4.75px) rotate(-45deg);transform:translate(-5px,-4.75px) rotate(-45deg)}
+
+
+
+
+
+
+
+
+
+
+
+
+.Index[data-v-5163b12a]{position:relative}
+
+.IndexHeading{
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  margin-bottom:calc(var(--header-height)*-1)
+}
+.IndexHeading-Container{cursor:pointer}
+.IndexHeading-Inner{
+  height: 100vh;
+  opacity: 1
+}
+.IndexHeading-Row{
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  align-items:center;
+  width:100%;
+  height:50%;
+  opacity:0;
+  -webkit-animation:fadeUp .4s ease .8s 1 normal forwards;
+  animation:fadeUp .4s ease .8s 1 normal forwards;
+  font-family:NimbusSanExt,sans-serif;
+  font-size:58px;
+  text-transform:uppercase;
+  text-align:center;
+  letter-spacing:.015em
+}
+.IndexHeading-Row:first-child{border-bottom:1px solid var(--color-muted)}
+.IndexHeading-Row:last-child{-webkit-animation:fadeUp .4s ease 1s 1 normal forwards;animation:fadeUp .4s ease 1s 1 normal forwards}
+@media (max-width:690px){.IndexHeading-Row{font-size:32px}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Project[data-v-0f496a6e]{overflow:hidden;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}
+.Project_index[data-v-0f496a6e]{position:-webkit-sticky;position:sticky;top:0}
+.Project_fade[data-v-0f496a6e]{opacity:.6}
+.ProjectCard{
+  position:relative;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  height:100vh;
+  padding-top:var(--header-height);
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease
+}
+.ProjectCard:after{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  content:"";
+  position:absolute;
+  z-index:5;
+  background:#fff;
+  background:-webkit-gradient(linear,left top,left bottom,from(rgba(var(--color-background-rgb),0)),color-stop(40%,rgba(var(--color-background-rgb),.6)),color-stop(70%,rgba(var(--color-background-rgb),.95)),to(rgba(var(--color-background-rgb),1)));
+  background:linear-gradient(180deg,rgba(var(--color-background-rgb),0),rgba(var(--color-background-rgb),.6) 40%,rgba(var(--color-background-rgb),.95) 70%,rgba(var(--color-background-rgb),1));
+  opacity:0;
+  -webkit-transform:translateY(100%);
+  transform:translateY(100%);
+  -webkit-transition:opacity 1s ease,-webkit-transform .6s ease;
+  transition:opacity 1s ease,-webkit-transform .6s ease;
+  transition:opacity 1s ease,transform .6s ease;
+  transition:opacity 1s ease,transform .6s ease,-webkit-transform .6s ease;
+  pointer-events:none
+}
+.ProjectCard-Inner{-webkit-box-flex:1;flex:1;position:relative}
+.ProjectCard-Inner:before{content:"";position:absolute;top:0;left:0;right:0;border-left-color:var(--color-muted);border-bottom:1px solid;border-bottom-color:var(--color-muted);border-right-color:var(--color-muted);border-top-color:var(--color-muted);-webkit-transition:var(--transition-color),var(--transition-opacity);transition:var(--transition-color),var(--transition-opacity)}
+.ProjectCard-Inner:after{content:"";z-index:-1;background-color:var(--color-background)}
+.ProjectCard-Inner:after,.ProjectCard-Link{position:absolute;top:0;left:0;right:0;bottom:0}
+.ProjectCard-Link{z-index:300}
+.ProjectCard-Content{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:end;justify-content:flex-end;z-index:200}
+.ProjectCard-Heading{position:absolute;top:0;left:0;right:0;display:grid;grid-template-columns: repeat(5, 1fr); padding:0 var(--gutter)}
+.ProjectCard-Heading>*{padding:1em var(--gutter)}
+
+.ProjectCard-CtaText,.ProjectCard-Title{text-decoration:underline;-webkit-text-decoration-color:transparent;text-decoration-color:transparent;-webkit-transition:-webkit-text-decoration-color .3s ease;transition:-webkit-text-decoration-color .3s ease;transition:text-decoration-color .3s ease;transition:text-decoration-color .3s ease,-webkit-text-decoration-color .3s ease;display:inline-block;pointer-events:auto}
+.ProjectCard-Cta{display:-webkit-box;display:flex;-webkit-box-pack:end;justify-content:flex-end}
+.ProjectCard-NextCta{grid-column:2}
+.ProjectCard-Title:hover{text-decoration:underline;-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor;-webkit-transition:-webkit-text-decoration-color .3s ease;transition:-webkit-text-decoration-color .3s ease;transition:text-decoration-color .3s ease;transition:text-decoration-color .3s ease,-webkit-text-decoration-color .3s ease}
+.ProjectCard-Link:hover 
+
+.ProjectCard-ProjectHero{opacity:.8}
+
+.ProjectCard-Link:hover .ProjectCard-CtaText{text-decoration:underline;-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor;-webkit-transition:-webkit-text-decoration-color .3s ease;transition:-webkit-text-decoration-color .3s ease;transition:text-decoration-color .3s ease;transition:text-decoration-color .3s ease,-webkit-text-decoration-color .3s ease}
+.ProjectCard_active .ProjectCard-Inner:before,.ProjectCard_next .ProjectCard-Inner:before{opacity:0}
+.ProjectCard_active:before{border-color:transparent}.ProjectCard_active .ProjectCard-Link{pointer-events:none}
+.ProjectCard_next:after{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}
+.ProjectCard_fade-Content,.ProjectCard_fade .ProjectCard-Content,.ProjectCard_fade .ProjectCard .ProjectHero,.ProjectCard_fade .ProjectHero{opacity:.6}
+
+
+@media (max-width:768px){
+  .ProjectCard-Heading_next{grid-template:auto/repeat(12,1fr)}
+  .ProjectCard-Number,.ProjectCard-Category,.ProjectCard-Location{display:none}
+  .ProjectCard-TitleContainer{grid-column:2/-2}
+  .ProjectCard-Cta{grid-column:-1}
+  .ProjectCard-NextCta{grid-column:4/-1}
+  .ProjectCard-NextCta br{display:none}
+}
+@media (min-width:690px){.ProjectCard-Link{top:calc(-1*var(--header-height))}.ProjectCard-NextNumber{display:none}}.fade-down-enter-active,.fade-down-leave-active{-webkit-transition:all .4s;transition:all .4s}.fade-down-enter,.fade-down-leave-active{opacity:0;-webkit-transform:translateY(1em);transform:translateY(1em)}
+
+
+.ProjectHero[data-v-8c496caa]{
+  position:absolute;
+  top:0;
+  left:0;
+  display:-webkit-box;
+  display:flex;
+  padding-left: 10%;
+  
+  width:100%;
+  margin:auto;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  -webkit-transition:all var(--card-scale-time) ease;
+  transition:all var(--card-scale-time) ease
+}
+
+
+.ProjectHero-Image[data-v-8c496caa]{
+  -o-object-fit:cover;
+  object-fit:cover;
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0)
+}
+
+
+@media (min-width:690px){
+  .ProjectHero[data-v-8c496caa]{
+
+  height:100vh;
+ 
+  -webkit-transform:scale(.6) translateY(calc(var(--header-height)*-1)) translateZ(0);
+  transform:scale(.6) translateY(calc(var(--header-height)*-1)) translateZ(0);
+
+  -webkit-transition:all var(--card-scale-time) ease;
+  transition:all var(--card-scale-time) ease}
+
+  .ProjectHero_active[data-v-8c496caa],.ProjectHero_next[data-v-8c496caa]{
+    -webkit-transform:scale(1) translateY(calc(var(--header-height)*-1)) translateY(0);
+    transform:scale(1) translateY(calc(var(--header-height)*-1)) translateY(0)
+  }
+}
+
+@media (max-width:690px){
+  .ProjectHero[data-v-8c496caa]{
+    top:50%;
+    -webkit-box-align:start;
+    align-items:flex-start;
+    height:auto;-webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .ProjectHero_active[data-v-8c496caa],.ProjectHero_next[data-v-8c496caa]{
+    top:0;
+    -webkit-transform:translateY(0);
+    transform:translateY(0)
+  }
+}
+
+
+
+.ImageLoader[data-v-16fac48a]{
+  height:auto;
+  /*
+  opacity:0;
+  -webkit-animation:fadeUp .4s ease .8s 1 normal forwards;
+  animation:fadeUp .4s ease .8s 1 normal forwards;*/
+
+  opacity:0;
+  -webkit-transition:opacity .3s ease;
+  transition:opacity .3s ease
+
+}
+
+
+
+.ImageLoader_loaded[data-v-16fac48a]{
+  opacity: 1;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TheFooter[data-v-58599e78]{position:absolute;bottom:0;left:0;z-index:300;width:100vw;height:var(--header-height)}.TheFooter-Inner[data-v-58599e78]{position:relative;z-index:10;display:grid;grid-template:1fr/4fr repeat(2,6fr) 5fr 3fr;-webkit-box-align:center;align-items:center;height:100%;background:var(--color-background);border-top:1px solid var(--color-muted)}.TheFooter-Cell[data-v-58599e78],.TheFooter-Inner[data-v-58599e78]{padding:0 var(--gutter)}.TheFooter-Cell_credit[data-v-58599e78]{text-align:right}.TheFooter-Cell_contact[data-v-58599e78]{display:none}.TheFooter-Link[data-v-58599e78]{text-decoration:underline;-webkit-text-decoration-color:transparent;text-decoration-color:transparent}.TheFooter-Link[data-v-58599e78],.TheFooter-Link[data-v-58599e78]:hover{-webkit-transition:-webkit-text-decoration-color .3s ease;transition:-webkit-text-decoration-color .3s ease;transition:text-decoration-color .3s ease;transition:text-decoration-color .3s ease,-webkit-text-decoration-color .3s ease}.TheFooter-Link[data-v-58599e78]:hover{text-decoration:underline;-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor}@media (max-width:768px){.TheFooter-Inner[data-v-58599e78]{display:-webkit-box;display:flex}.TheFooter-Cell_contact[data-v-58599e78],.TheFooter-Cell_email[data-v-58599e78],.TheFooter-Cell_tel[data-v-58599e78]{display:none}.TheFooter-Cell_insta[data-v-58599e78],.TheFooter-Cell_newsletter[data-v-58599e78]{-webkit-box-flex:1;flex:1}.TheFooter-Cell_newsletter[data-v-58599e78]{min-width:200px}.TheFooter-Cell_credit[data-v-58599e78]{-webkit-box-flex:0.5;flex:0.5 1}.TheFooter-CreditText[data-v-58599e78]{display:none}}.TheFooter.slide-enter-active[data-v-58599e78],.TheFooter.slide-leave-active[data-v-58599e78]{-webkit-transition:all .4s ease;transition:all .4s ease}.TheFooter.slide-enter[data-v-58599e78],.TheFooter.slide-leave-active[data-v-58599e78]{opacity:0;-webkit-transform:translateY(30px);transform:translateY(30px)}
+.FooterNotification{position:absolute;bottom:100%;left:0;right:0;display:-webkit-box;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;height:var(--header-height);padding:0 var(--grid-gap);background:var(--color-background);border-top:1px solid var(--color-muted);cursor:pointer}.FooterNotification-Message{max-width:100%}.FooterNotification-Message h2{margin-bottom:1em}.FooterNotification-Message p+h2{margin-top:2em}.FooterNotification-Message p+p{margin-top:1em}.FooterNotification-Message a{text-decoration:underline;-webkit-transition:-webkit-text-decoration-color .2s ease;transition:-webkit-text-decoration-color .2s ease;transition:text-decoration-color .2s ease;transition:text-decoration-color .2s ease,-webkit-text-decoration-color .2s ease;-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor}.FooterNotification-Message a:hover{-webkit-text-decoration-color:transparent;text-decoration-color:transparent}.FooterNotification-Message a:focus{-webkit-text-decoration:dotted;text-decoration:dotted}.FooterNotification-CloseText{text-decoration:underline;-webkit-transition:-webkit-text-decoration-color .2s ease;transition:-webkit-text-decoration-color .2s ease;transition:text-decoration-color .2s ease;transition:text-decoration-color .2s ease,-webkit-text-decoration-color .2s ease;-webkit-text-decoration-color:transparent;text-decoration-color:transparent}.FooterNotification-CloseText:focus,.FooterNotification-CloseText:hover{-webkit-text-decoration-color:currentColor;text-decoration-color:currentColor;outline:none}.FooterNotification-CloseText:focus{-webkit-text-decoration:dotted;text-decoration:dotted}@media (max-width:1024px){.FooterNotification{-webkit-box-align:start;align-items:flex-start;height:auto;padding:var(--grid-gap)}}
+.Newsletter-Form{display:-webkit-box;display:flex;width:100%}.Newsletter-EmailContainer{position:relative;font-size:inherit;margin-right:10px}.Newsletter-Label{position:absolute;top:2px;left:0;pointer-events:none}.Newsletter-Label_focus{left:8px;color:var(--color-muted)}.Newsletter-Label_hidden{opacity:0}.Newsletter-Email{width:100%;background:none;border-bottom:1px solid transparent;-webkit-transition:border-color var(--transition-color-timing);transition:border-color var(--transition-color-timing)}.Newsletter-Email::-webkit-input-placeholder{opacity:0}.Newsletter-Email::-moz-placeholder{opacity:0}.Newsletter-Email:-ms-input-placeholder{opacity:0}.Newsletter-Email::-ms-input-placeholder{opacity:0}.Newsletter-Email::placeholder{opacity:0}.Newsletter-Email:hover,.Newsletter-Email_active{border-color:inherit}.Newsletter-Submit{border-bottom:1px solid;opacity:0;-webkit-transition:opacity var(--transition-color-timing);transition:opacity var(--transition-color-timing);pointer-events:none}.Newsletter-Submit:focus,.Newsletter-Submit_visible{opacity:1;pointer-events:auto}
+section.reference-grid[data-v-088b4521]{position:fixed;top:10px;left:10px;width:calc(100vw - 20px);height:calc(100% - 20px);pointer-events:none;opacity:1;z-index:100000}section.reference-grid .inner[data-v-088b4521]{position:relative;white-space:nowrap}section.reference-grid .inner i[data-v-088b4521]{width:4.16667%;height:100vh;position:relative;display:inline-block}section.reference-grid .inner i[data-v-088b4521]:after,section.reference-grid .inner i[data-v-088b4521]:before{content:" ";position:absolute;top:0;height:100%;background:rgba(0,0,0,.025);width:2px;left:-1px;z-index:-1}section.reference-grid .inner i[data-v-088b4521]:after{width:20px;left:-11px;background:none;border-left:1px solid rgba(0,0,0,.05);border-right:1px solid rgba(0,0,0,.05)}</style>
+  </head>
+
+
+
+
+
+
+
+  <body >
+    <div data-server-rendered="true" id="__nuxt">
+      <!----><div id="__layout">
+        <div class="MasterLayout">
+          <header id='TheHeader'class="TheHeader TheHeader_ready">
+            <div class="TheHeader-Background"></div> 
+            <nav class="TheHeader-HomeNav">
+              <a href="./new_test.html" class="TheHeader-Link nuxt-link-exact-active nuxt-link-active">
+                <svg enable-background="new 0 0 461.9 48.4" viewBox="0 0 461.9 48.4" xmlns="http://www.w3.org/2000/svg" class="LogoSvg LogoSvg_invert" data-v-2a2a23c1>
+                  <g class="LogoSvg-Group" data-v-2a2a23c1>
+                    <path d="m9.1 4.2 14.8 34.7 14.9-34.7h5.9l-18 40h-5.9l-18.1-40z" data-v-2a2a23c1></path> 
+                    <path d="m53.1 4.2h31.7v4.9h-26.3v12.4h25.2v4.7h-25.2v13.3h26.9v4.9h-32.3z" data-v-2a2a23c1></path> 
+                    <path d="m95.4 4.2h6.5l27.2 33.7v-33.7h5.4v40h-6.7l-27-33.5v33.5h-5.4z" data-v-2a2a23c1></path> 
+                    <path d="m147.1 4.2h6.5l27.2 33.7v-33.7h5.4v40h-6.7l-27-33.5v33.5h-5.4z" data-v-2a2a23c1></path> 
+                    <path d="m220.2 31.4c.8 6.3 4.7 8.9 13 8.9 7.6 0 11.6-2.5 11.6-7.1 0-2.4-1.3-4-3.8-5-1.4-.5-2.8-.8-8.7-1.7-7.2-1.1-9.1-1.6-11.5-2.8-3.5-1.7-5.5-4.9-5.5-8.6 0-7.3 6.7-12.1 16.8-12.1 10.5 0 16.2 4 17.2 12.2h-5.6c-1-4.9-4.9-7.3-11.9-7.3-6.5 0-10.5 2.6-10.5 6.7 0 2.3 1.3 3.8 4.2 4.9 1.8.6 3.1.9 9.5 1.9 5.5.8 8.9 1.6 10.9 2.5 3.2 1.5 5 4.5 5 8.5 0 7.9-6.8 13-17.6 13-12.1 0-18.2-4.6-18.5-13.9h5.4z" data-v-2a2a23c1></path> <path d="m271.9 9.1h-15.2v-4.9h36v4.9h-15.4v35.2h-5.4z" data-v-2a2a23c1></path> 
+                    <path d="m337 4.2v23.9c0 5.9-.6 8.6-2.5 11.1-2.9 3.9-8.6 6.1-15.5 6.1-7.6 0-13.6-2.6-16.2-7.3-1.3-2.2-1.7-4.8-1.7-10v-23.8h5.5v24.3c0 3.3.5 5.5 1.5 7.3 1.7 2.8 6 4.6 11 4.6 5.6 0 9.9-2 11.5-5.5.7-1.6 1-3.6 1-6.4v-24.3z" data-v-2a2a23c1></path> 
+                    <path d="m349.2 4.2h19.1c6.4 0 9.6.8 12.5 3 4.2 3.2 6.5 9.1 6.5 16.7 0 8.2-2.5 14.6-7 17.8-2.6 1.9-5.8 2.5-12.4 2.5h-18.7zm19 35.2c4.3 0 6.5-.6 8.5-2.2 2.9-2.5 4.5-6.9 4.5-12.9 0-10.4-4.3-15.2-13.9-15.2h-12.7v30.3z" data-v-2a2a23c1></path> 
+                    <path d="m398.2 4.2h5.4v40h-5.4z" data-v-2a2a23c1></path> 
+                    <path d="m458.1 23.9c0 12.5-9.2 21.4-22.1 21.4-13.1 0-21.8-8.4-21.8-21.1 0-12.4 9.4-21.2 22.5-21.2 12.7.1 21.4 8.5 21.4 20.9zm-37.9.2c0 9.7 6.4 16.3 15.9 16.3s16-6.5 16-16.1c0-9.7-6.3-16.3-15.5-16.3-9.5 0-16.4 6.8-16.4 16.1z" data-v-2a2a23c1></path>
+                  </g>
+                </svg>
+              </a>
+            </nav> 
+            <nav class="TheHeader-SiteNav">
+              <a href="./ddd.html" id="Elixirs" class="TheHeader-Link">
+                <span class="TheHeader-LinkText">Elixirs</span>
+              </Button> 
+              <a href="" class="TheHeader-Link">
+                <span class="TheHeader-LinkText">Genetics</span>
+              </a> 
+              <a href="./about.html" class="TheHeader-Link">
+                <span class="TheHeader-LinkText">About</span>
+              </a> 
+              <a href="./contact.html" class="TheHeader-Link">
+                <span class="TheHeader-LinkText">Contact</span>
+              </a>
+
+            </nav> 
+            <div class="TheHeader-MobileNav">
+              <button aria-label="Open menu" class="TheHeader-MobileMenuButton">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41.2 16" xml:space="preserve" class="HamburgerSvg" style="enable-background:new 0 0 41.2 16;" data-v-a04707fe>
+                  <g class="HamburgerSvg-Group" data-v-a04707fe>
+                    <rect x="0.5" y="0.6" width="40" height="1.5" class="HamburgerSvg-TopRect" data-v-a04707fe></rect> 
+                    <rect x="0.5" y="14.1" width="40" height="1.5" class="HamburgerSvg-BottomRect" data-v-a04707fe></rect>
+                  </g>
+                </svg>
+              </button>
+            </div></header> <!----> 
+
+<!--
+
+          <section class="TheIndex">
+            <div class="TheIndex-Close">
+              <button id="closebutton" aria-label="Close Project Index" class="TheIndex-CloseButton">
+                <svg data-v-80ba0bc8="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.9 17.4" xml:space="preserve" class="SmallXSvg">
+                  <polygon data-v-80ba0bc8="" points="15.6,2.3 14.9,1.6 8.4,8 1.8,1.6 1.1,2.3 7.7,8.7 1.1,15 1.8,15.7 8.4,9.4 14.9,15.8 15.6,15 9.1,8.7" class="SmallXSvg-Polygon"></polygon>
+                </svg>
+              </button>
+            </div> 
+              <nav class="TheIndex-MobileNav"><a href="/about" class="TheIndex-MobileNavLink">
+                About
+              </a> <a href="/contact" class="TheIndex-MobileNavLink">
+                Contact
+              </a> <a href="/journal" class="TheIndex-MobileNavLink">
+                Journal
+              </a></nav> 
+
+              <div class="TheIndex-ProjectIndex">
+                <div class="TheIndex-Controls">
+                  <div data-v-66d45352="" class="IndexFilter">
+                    <div data-v-66d45352="" class="IndexFilter-Heading">
+                      <h2 data-v-66d45352="">Projects</h2> 
+                      <div data-v-66d45352="">
+                        <button data-v-66d45352="" class="IndexFilter-ShowFilter">Filter</button>
+                      </div>
+                    </div> 
+                    <div data-v-66d45352="" class="IndexFilter-Wrapper" style="height: 0px;">
+                      <div data-v-66d45352="" class="IndexFilter-Inner" style="display: none;">
+                        <form data-v-66d45352="" class="IndexFilter-Form">
+                          <label data-v-66d45352="" class="IndexFilter-FilterItem IndexFilter-FilterItem_active">All Categories
+                            <input data-v-66d45352="" type="reset" value="All Categories" class="IndexFilter-FilterInput">
+                          </label> 
+                          <label data-v-2e45e22c="" data-v-66d45352="" class="Radio IndexFilter-FilterItem">Houses<input data-v-2e45e22c="" type="radio" class="Radio-Input" value="houses">
+                          </label> 
+                          <label data-v-2e45e22c="" data-v-66d45352="" class="Radio IndexFilter-FilterItem">ADU<input data-v-2e45e22c="" type="radio" class="Radio-Input" value="adu">
+                          </label> 
+                          <label data-v-2e45e22c="" data-v-66d45352="" class="Radio IndexFilter-FilterItem">Multi-Family<input data-v-2e45e22c="" type="radio" class="Radio-Input" value="multi-family">
+                          </label> 
+                          <label data-v-2e45e22c="" data-v-66d45352="" class="Radio IndexFilter-FilterItem">Commercial<input data-v-2e45e22c="" type="radio" class="Radio-Input" value="commercial">
+                          </label>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+
+
+
+
+                <nav class="TheIndex-Projects">
+                  <div class="TheIndex-Key">
+                    <div class="TheIndex-KeyHeading TheIndex-KeyHeading_project">Project</div> 
+                    <div class="TheIndex-KeyHeading TheIndex-KeyHeading_location">Location</div> 
+                    <div class="TheIndex-KeyHeading TheIndex-KeyHeading_category">Category</div>
+                  </div> 
+                  <ul class="TheIndex-List">
+                    
+
+
+                    <li class="IndexItem">
+                      <div class="IndexItem-Inner">
+                        <a href="/projects/keogh-residence" class="IndexItem-Link" aria-label="View Keogh Residence"></a> 
+                        <div class="IndexItem-Image">
+                          <img data-v-16fac48a="" alt="Keogh Residence" draggable="true" height="252" src="https://cdn.sanity.io/images/vt7v93fm/production/2f96861f97881b5ab29701cc036b413f9839ea7f-2919x1644.jpg?rect=0,1,2919,1642&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" width="448" class="ImageLoader ImageLoader_loaded">
+                        </div> 
+                        <div class="IndexItem-Number">01</div> 
+                        <div class="IndexItem-Title">
+                          <h2 class="IndexItem-TitleText">Keogh Residence</h2>
+                        </div> 
+                        <div class="IndexItem-Location">Manhattan Beach, CA</div> 
+                        <div class="IndexItem-Category">Houses</div> 
+                        <div class="IndexItem-View">
+                          <span class="IndexItem-ViewText">View</span>
+                        </div>
+                      </div>
+                    </li>
+
+
+
+                    <li class="IndexItem">
+                      <div class="IndexItem-Inner">
+                        <a href="/projects/ramos-residence" class="IndexItem-Link" aria-label="View Ramos Residence"></a> 
+                        <div class="IndexItem-Image">
+                          <img data-v-16fac48a="" alt="Ramos Residence" draggable="true" height="252" src="https://cdn.sanity.io/images/vt7v93fm/production/8096e76f29caf6b78a07ae134f5bf04284730348-7891x5263.jpg?rect=0,412,7891,4439&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" width="448" class="ImageLoader ImageLoader_loaded">
+                        </div> 
+                        <div class="IndexItem-Number">02</div> 
+                        <div class="IndexItem-Title">
+                          <h2 class="IndexItem-TitleText">Ramos Residence</h2>
+                        </div> 
+                        <div class="IndexItem-Location">Manhattan Beach, CA</div> 
+                        <div class="IndexItem-Category">Houses</div> 
+                        <div class="IndexItem-View">
+                          <span class="IndexItem-ViewText">View</span>
+                        </div>
+                      </div>
+                    </li>
+
+
+
+
+                    <li class="IndexItem">
+                      <div class="IndexItem-Inner">
+                        <a href="/projects/price-residence" class="IndexItem-Link" aria-label="View Price Residence"></a> 
+                        <div class="IndexItem-Image">
+                          <img data-v-16fac48a="" alt="Price Residence" draggable="true" height="252" src="https://cdn.sanity.io/images/vt7v93fm/production/60c2c8dcf477f3a1d381706a3bf3168b60b9cbe3-4000x2094.jpg?rect=139,0,3723,2094&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" width="448" class="ImageLoader ImageLoader_loaded">
+                        </div> 
+                        <div class="IndexItem-Number">03</div> 
+                        <div class="IndexItem-Title">
+                          <h2 class="IndexItem-TitleText">Price Residence</h2>
+                        </div> 
+                        <div class="IndexItem-Location">Northeast LA</div> 
+                        <div class="IndexItem-Category">Houses</div> 
+                        <div class="IndexItem-View">
+                          <span class="IndexItem-ViewText">View</span>
+                        </div>
+                      </div>
+                    </li>
+
+
+
+
+                    <li class="IndexItem">
+                      <div class="IndexItem-Inner">
+                        <a href="/projects/cliff-may-restoration" class="IndexItem-Link" aria-label="View Cliff May Restoration"></a> 
+                        <div class="IndexItem-Image">
+                          <img data-v-16fac48a="" alt="Cliff May Restoration" draggable="true" height="252" src="https://cdn.sanity.io/images/vt7v93fm/production/7ead0c1a104f73aed99f941f265c76ae90ebbc7d-2000x950.jpg?rect=156,0,1689,950&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" width="448" class="ImageLoader ImageLoader_loaded">
+                        </div> 
+                        <div class="IndexItem-Number">04</div> 
+                        <div class="IndexItem-Title">
+                          <h2 class="IndexItem-TitleText">Cliff May Restoration</h2>
+                        </div> 
+                        <div class="IndexItem-Location">Long Beach</div> 
+                        <div class="IndexItem-Category">Houses</div> 
+                        <div class="IndexItem-View">
+                          <span class="IndexItem-ViewText">View</span>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul> 
+
+
+
+                <div class="TheIndex-ThumbnailWrapper">
+                  <div class="TheIndex-ThumbnailContainer" style="transform: translate(614px, 652px) translateZ(0px); display: none;">
+                    <div class="TheIndex-Thumbnail" style="display: none;">
+                      <img data-v-16fac48a="" alt="" draggable="true" loading="true" src="https://cdn.sanity.io/images/vt7v93fm/production/2f96861f97881b5ab29701cc036b413f9839ea7f-2919x1644.jpg?rect=0,1,2919,1642&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" class="ImageLoader ImageLoader_loaded">
+                    </div>
+                    <div class="TheIndex-Thumbnail" style="display: none;">
+                      <img data-v-16fac48a="" alt="" draggable="true" loading="true" src="https://cdn.sanity.io/images/vt7v93fm/production/8096e76f29caf6b78a07ae134f5bf04284730348-7891x5263.jpg?rect=0,412,7891,4439&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" class="ImageLoader ImageLoader_loaded">
+                    </div>
+                    <div class="TheIndex-Thumbnail" style="display: none;">
+                      <img data-v-16fac48a="" alt="" draggable="true" loading="true" src="https://cdn.sanity.io/images/vt7v93fm/production/60c2c8dcf477f3a1d381706a3bf3168b60b9cbe3-4000x2094.jpg?rect=139,0,3723,2094&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" class="ImageLoader ImageLoader_loaded">
+                    </div>
+                    <div class="TheIndex-Thumbnail" style="display: none;">
+                      <img data-v-16fac48a="" alt="" draggable="true" loading="true" src="https://cdn.sanity.io/images/vt7v93fm/production/7ead0c1a104f73aed99f941f265c76ae90ebbc7d-2000x950.jpg?rect=156,0,1689,950&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" class="ImageLoader ImageLoader_loaded">
+                    </div>
+                    <div class="TheIndex-Thumbnail" style="display: none;">
+                      <img data-v-16fac48a="" alt="" draggable="true" loading="true" src="https://cdn.sanity.io/images/vt7v93fm/production/0e5c966f593407e021c44ed73600ef5dccc8ae9b-2400x1600.jpg?rect=0,125,2400,1350&amp;w=448&amp;h=252&amp;fm=jpg&amp;q=85&amp;auto=format" class="ImageLoader ImageLoader_loaded">
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </section> 
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <main class="Index" data-v-5163b12a>
+        <section class="IndexHeading" data-v-5163b12a>
+        <div class="IndexHeading-Container" style="height:100vh;">
+          <div class="IndexHeading-Inner">
+            <h1 class="IndexHeading-Row">Check Care</h1> 
+            
+
+            <h2 class="IndexHeading-Row">
+              <span class="1">Are you okay?</span>
+              <!--
+              <span class="2">Interior</span>
+              <span class="3">Architecture</span>
+              <span class="4">Los Angeles</span> -->
+            </h2>
+          </div>
+        </div>
+      </section> 
+
+
+            <section class="Index-Projects" data-v-5163b12a>
+
+
+
+              <div class="Project Project_index" style="z-index:0;" data-v-0f496a6e data-v-5163b12a>
+                <div class="ProjectCard" data-v-0f496a6e>
+                  <div class="ProjectCard-Inner">
+                    <a href="/projects/keogh-residence" aria-label="Keogh Residence" class="ProjectCard-Link"></a> 
+                    <div class="ProjectHero" height="auto" width="100%" data-v-8c496caa>
+                      <img alt="" draggable="true"src="./images/main1.jpg"   class="ImageLoader ProjectHero-Image ImageLoader_loaded"  data-v-16fac48a>
+                    </div> 
+                    <div class="ProjectCard-Content">
+                      <div class="ProjectCard-Heading">
+                        <div class="ProjectCard-Number">
+            Rarity Level 04
+          </div> <div class="ProjectCard-TitleContainer"><h2 class="ProjectCard-Title">
+              Jeju Halla White
+            </h2></div> <h3 style="text-align: center;" class="ProjectCard-Location">
+            Korean Bellflower Root
+          </h3> <h3 style="text-align: center;" class="ProjectCard-Category">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breathe Easier
+          </h3> <div class="ProjectCard-Cta"><span class="ProjectCard-CtaText">
+              8000mg
+            </span></div></div> <!----></div></div></div> <!----></div>
+
+
+
+
+
+            <div class="Project Project_index" style="z-index:1;" data-v-0f496a6e data-v-5163b12a>
+              <div class="ProjectCard" data-v-0f496a6e>
+                <div class="ProjectCard-Inner">
+                  <a href="/projects/ramos-residence" aria-label="Ramos Residence" class="ProjectCard-Link"></a> 
+                  <div class="ProjectHero" data-v-8c496caa>
+                    <img alt="" draggable="true" src="./images/main2.jpg" class="ImageLoader ProjectHero-Image ImageLoader_loaded" data-v-16fac48a></div> 
+                    <div class="ProjectCard-Content">
+                      <div class="ProjectCard-Heading">
+                        <div class="ProjectCard-Number">
+            Rarity Level 04
+          </div> <div class="ProjectCard-TitleContainer"><h2 class="ProjectCard-Title">
+              Mac Purifica
+            </h2></div> <h3 style="text-align: center;" class="ProjectCard-Location">
+            South Sea Purified Pearls
+          </h3> <h3 style="text-align: center;" class="ProjectCard-Category">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Soft luminescent skin
+          </h3> <div class="ProjectCard-Cta"><span class="ProjectCard-CtaText">
+              2000mg
+            </span></div></div> <!----></div></div></div> <!----></div>
+
+
+          </section>
+        </main> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <footer class="TheFooter" data-v-58599e78 data-v-58599e78><!----> <div class="TheFooter-Inner" data-v-58599e78><div class="TheFooter-Cell TheFooter-Cell_contact" data-v-58599e78>
+        Contact:
+      </div> <div class="Newsletter TheFooter-Cell TheFooter-Cell_newsletter" data-v-58599e78><!----> <form method="get" autocomplete="off" class="Newsletter-Form"><div class="Newsletter-EmailContainer"><label for="newsletter-email" class="Newsletter-Label">Are you okay?</label> <input id="newsletter-email" type="email" placeholder="Newsletter" required="required" aria-label="Email Address" value="" class="Newsletter-Email"></div> <button aria-label="Submit Signup" class="Newsletter-Submit"><span class="Newsletter-SubmitText">Submit</span></button></form></div> <div class="TheFooter-Cell TheFooter-Cell_email" data-v-58599e78><a href="mailto:info@vennstudiola.com" class="TheFooter-Link" data-v-58599e78>
+          care@check.care
+        </a></div> <div class="TheFooter-Cell TheFooter-Cell_tel" data-v-58599e78><a href="tel:3237950190" class="TheFooter-Link" data-v-58599e78>
+          +82.2.792.7167
+        </a></div> <div class="TheFooter-Cell TheFooter-Cell_insta" data-v-58599e78><a href="https://www.instagram.com/checkcareofficial" target="_blank" rel="noopener" class="TheFooter-Link" data-v-58599e78>
+          @checkcareofficial
+        </a></div> <div class="TheFooter-Cell TheFooter-Cell_credit" data-v-58599e78><a href="https://1of1studio.com/" target="_blank" rel="noopener" class="TheFooter-Link" data-v-58599e78><span class="TheFooter-CreditText" data-v-58599e78>
+            partners
+          </span>
+        </a></div></div></footer> <!---->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+
+
+
+
+
+
+
+/*
+  h=(r(407),r(2)),m=Object(h.a)(v,(
+    function(){
+      var e=this,t=e.$createElement,r=e._self._c||t;
+      return r("section",{staticClass:"IndexHeading"},
+        [r("div",{ref:"Container",staticClass:"IndexHeading-Container",style:{height:""+e.containerHeight+e.heightUnit},on:{click:e.scrollDown}},
+          [r("div",{staticClass:"IndexHeading-Inner",style:{height:""+e.containerHeight*e.headerScroll+e.heightUnit,opacity:1-e.headerOpacity}},
+            [r("h1",{staticClass:"IndexHeading-Row"},[e._v("\n        Venn Studio\n      ")]),e._v(" "),r("h2",{staticClass:"IndexHeading-Row"},[r("transition",{attrs:{name:"fade",mode:"out-in"}},[e._l(e.headingText,(function(text,t){return[t===e.currentTextItem?r("span",{key:text},[e._v("\n              "+e._s(text)+"\n            ")]):e._e()]}))],2)],1)])])])}),[],!1,null,null,null).exports
+*/
+
+
+  </script>
+
+
+        
+
+
+
+        <script src="/_nuxt/ede41ea378fbbee5b8d9.js" defer></script>
+        <script src="/_nuxt/23e4f8641828017baeff.js" defer></script>
+        <script src="/_nuxt/dfd42baf84f49f9b7176.js" defer></script>
+  </body>
+</html>
